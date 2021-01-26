@@ -1,0 +1,19 @@
+<div class="btn-group">
+    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Sepetim : {{totalCartItemPrice}}$-({{totalCartItem}}) 
+      <!-- | currency:'USD':true   **currency pipe'ı** -->
+    </button>
+    <div class="dropdown-menu dropdown-menu-right">
+      <div class="border-bottom my-2"></div>
+    <div class="text-center">
+      <b>
+        <span routerLink="my-cart">
+          Sepetim
+        </span>
+      </b>
+    </div>
+      <button *ngFor="let item of cartItem" class="dropdown-item" type="button">
+        {{item.product.name| uppercase}} - ({{item.quantity}}) 
+      </button>
+    </div>
+  </div>
