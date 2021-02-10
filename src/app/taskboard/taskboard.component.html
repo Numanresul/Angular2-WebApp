@@ -1,0 +1,21 @@
+
+<div class="col">
+    <!-- <h4 class="page-header">Ürünler</h4> -->
+  </div>
+  <!-- <div class="col">
+     <input class="form-control" type="text" placeholder="type something..." > 
+  </div> -->
+  
+  <!-- <div class="col" *ngIf=filterText>
+  <b>{{filterText}}</b> için arama yaptınız.
+  </div> -->
+
+  <div class="col mt-3">
+  
+
+    <ngx-taskboard class="w-100 h-100" [items]="items" [hGroupKeys]="hGroupKeys" [vGroupKeys]="vGroupKeys"
+      [vGroupKey]="vGroupKey" [hGroupKey]="hGroupKey" [sortBy]="sortBy" [invertGroupDirection]="false" [showFilterRow]="false">
+    </ngx-taskboard>
+    
+    
+  </div>

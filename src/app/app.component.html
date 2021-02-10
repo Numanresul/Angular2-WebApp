@@ -1,16 +1,56 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">{{title}}</a>
+<style>
+  .sidenav {
+
+  position: fixed;
+  z-index: 1;
+  top: 120px;
+  left: 10px;
+  /* overflow-x: hidden; */
+  overflow: auto;
+  padding: 0px 0;
+  width: 15%;
+  max-height: 85%;
+}
+#style-15::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+	background-color: #F5F5F5;
+	border-radius: 10px;
+}
+
+#style-15::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: #F5F5F5;
+}
+
+#style-15::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #FFF;
+  background-image: -webkit-gradient(linear, 40% 0%, 75% 84%, from(#9b9da0), to(#9b9da0), color-stop(.6,#9b9da0));
+}
+</style>
+<nav class="navbar navbar-expand-lg navbar-light shadow p-1 mb-5 bg-white rounded fixed-top" >
+  
+    <a class="navbar-brand" href="#" style="background-color: white; border-radius: 4pt;color: #007bff;font-weight:900;font-size:3em;font-family:Arial, Helvetica, sans-serif;">{{titleLogo1}}</a>
+    <a class="navbar-brand" href="#" style="background-color: white;border-radius: 4pt; margin:0.5% 0% 0% -1%;color: rgb(219, 122, 10);font-style: italic;">{{titleLogo2}}</a>
+  
+    
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav mr-auto"></ul>
       <app-cart-summary></app-cart-summary>
     </div>
   </nav>
-  <div class="col">
+  <div class="col" style="margin-top: 120px;">
     <div class="row">
-        <div class="col-3">
+        <div class="col-2">
+          <div id="style-15" class="shadow-lg pr-0 pl-0 rounded sidenav">
             <app-category></app-category>
+            
+          </div>
         </div>
-        <div class="col-9">
+        <div class="col-10 ">
           <router-outlet></router-outlet>
         </div>
     </div>
