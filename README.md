@@ -1,3 +1,8 @@
+# Angular2+-WebApp
+Angular11 ile geliştirilmiş Örnek projedir.</br>
+Single Page app olarak tasarlanmıştır, app route, http methods, çeşitli hazır angular componentlar ile zenginleştirilmiştir(calendar,chart js vb.)</br>
+Type Script ile kodlanmıştır.
+
 # SepetUygulamasi
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.2.
