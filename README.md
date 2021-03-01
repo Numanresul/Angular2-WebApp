@@ -1,4 +1,7 @@
 # Angular2+-WebApp
+
+![alt text](https://ibb.co/xfjdnqv)
+
 Angular11 ile geliştirilmiş Örnek projedir.</br>
 <b>Single Page app</b> olarak tasarlanmıştır,<b> app route</b>, <b>http methods</b> ile api kullanımı, çeşitli hazır angular componentlar ile zenginleştirilmiştir(<b> calendar,chart js vb. </b>)</br>
 Type Script ile kodlanmıştır.
